@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import pedirProducto from "./pedirProducto";
-import Menu from "./Menu";
+import pedirProducto from "../pedirProducto";
+import Menu from "../Menu/Menu";
 
 const Pedidos = () => {
   const [pedidos, setPedidos] = useState([]);
