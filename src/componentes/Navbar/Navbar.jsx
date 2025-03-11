@@ -1,18 +1,30 @@
-const Navbar = () => {      // Navbar component
+import "./Navbar.css";
+const Navbar = () => {
+  // Navbar component
+
   return (
     <nav className="navbar">
-     <a href="#"> 
-        <h1>Pizzeria </h1> 
+      
+        <div className="logo">LOGO PIZZA </div>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Ubicacion</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Carrito</a></li>
+          <li>
+            <a href="#.com">Inicio</a>
+          </li>
+          <li>
+            <a href="#.com">Menu</a>
+          </li>
+          <li>
+            <a href="#.com">Ubicacion</a>
+          </li>
+          <li>
+            <a href="#.com">Contacto</a>
+          </li>
+          <li>
+            <a href="#.com">Carrito</a>
+          </li>
         </ul>
-
-     </a>
+      
     </nav>
   );
-}
+};
 export default Navbar;

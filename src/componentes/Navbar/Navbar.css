@@ -1,0 +1,38 @@
+.navbar {
+  width: auto;
+  height: 70px;
+  background-color: #fe893c;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: inherit;
+  align-items: center;
+  border-radius: 20px;
+}
+.navbar .logo {
+  color: rgb(98, 0, 0);
+  margin-left: 20px;
+  display: grid;
+  float: right;
+}
+.navbar ul {
+  align-self: center;
+  margin: 20px;
+}
+.navbar li {
+  display: grid;
+  margin-left: 20px;
+  float: right;
+  overflow: hidden;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(98, 0, 0);
+  font-size: 20px;
+  padding: 10px, 15px;
+  transition: 0.2s ease-in-out;
+  display: grid;
+  text-align: center;
+}
+.navbar a:hover {
+  color: rgb(255, 255, 255);
+}
