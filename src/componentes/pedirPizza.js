@@ -1,9 +1,9 @@
 import data from "../data/pizzas.json";
 
-const pedirProducto = () => {
+const pedirPizza = () => {
   return new Promise((resolve, reject) => {
     resolve(data);
   });
 };
 
-export default pedirProducto;
+export default pedirPizza;

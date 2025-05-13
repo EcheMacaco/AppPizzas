@@ -1,11 +1,12 @@
-import Pedidos from "./componentes/Pedidos/Pedidos";
+import PizzaItem from "./componentes/PizzaItem/PizzaItem";
 import Navbar from "./componentes/Navbar/Navbar";
+
 function App() {
   return (
     <div className="App">
       <h1>
         <Navbar />
-        <Pedidos />{" "}
+        <PizzaItem />{" "}
       </h1>
     </div>
   );

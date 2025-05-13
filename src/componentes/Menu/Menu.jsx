@@ -1,19 +1,19 @@
 import Pizza from "../Pizza/Pizza";
 import "./Menu.css";
 
-const Menu = ({ pedidos }) => {
+const Menu = ({ pizzaItem }) => {
   return (
     <div>
-      {pedidos.length > 0 &&
-        pedidos.map((pedido) => {
-          return (console.log(pedido),
-            <div key={pedido.id}>
-              
-              <Pizza pedido={pedido} />
+      {pizzaItem.length > 0 &&
+        pizzaItem.map((pizzaItem) => {
+          return (
+            <div className="pizza-store" key={pizzaItem.id}>
+              <Pizza  pizzaItem={pizzaItem} />
             </div>
           );
         })}
     </div>
   );
 };
+// Menu es un componente que recibe un array de objetos pizzaItem como props y muestra una lista de pizzas utilizando el componente Pizza.
 export default Menu;
