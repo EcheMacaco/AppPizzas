@@ -1,6 +1,10 @@
 import Pizza from "../Pizza/Pizza";
 import "./Menu.css";
 
+// Menu.jsx
+// Este componente es responsable de mostrar una lista de pizzas.
+// Recibe un array de objetos pizzaItem como props y utiliza el componente Pizza para mostrar cada pizza individualmente.
+// El componente itera sobre el array pizzaItem y renderiza un componente Pizza para cada elemento, pasando las propiedades necesarias.
 const Menu = ({ pizzaItem }) => {
   return (
     <div>
@@ -8,7 +12,7 @@ const Menu = ({ pizzaItem }) => {
         pizzaItem.map((pizzaItem) => {
           return (
             <div className="pizza-store" key={pizzaItem.id}>
-              <Pizza  pizzaItem={pizzaItem} />
+              <Pizza pizzaItem={pizzaItem} />
             </div>
           );
         })}

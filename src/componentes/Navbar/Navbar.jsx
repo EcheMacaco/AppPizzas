@@ -1,29 +1,26 @@
 import "./Navbar.css";
-const Navbar = () => {
-  // Navbar component
 
+import Logo from "../../Img/Logo.jpg";
+const Navbar = () => {
   return (
     <nav className="navbar">
-      
-        <div className="logo">LOGO PIZZA </div>
-        <ul>
-          <li>
-            <a href="#.com">Inicio</a>
-          </li>
-          <li>
-            <a href="#.com">Menu</a>
-          </li>
-          <li>
-            <a href="#.com">Ubicacion</a>
-          </li>
-          <li>
-            <a href="#.com">Contacto</a>
-          </li>
-          <li>
-            <a href="#.com">Carrito</a>
-          </li>
-        </ul>
-      
+      <div>
+        <img className="logo" src={Logo} alt="LOGO" />
+      </div>
+      <ul>
+        <li>
+          <a href="/Nosotros">Nosotros</a>
+        </li>
+        <li>
+          <a href="#.com">Carrito</a>
+        </li>
+        <li>
+          <a href="/Menu">Menu</a>
+        </li>
+        <li>
+          <a href="/inicio">Inicio</a>
+        </li>
+      </ul>
     </nav>
   );
 };
