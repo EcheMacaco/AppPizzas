@@ -1,67 +1,98 @@
 [
-    {"id":1,
-"nombre":"Margarita",
-"ingredientes":["mozzarella", " tomate", " albahaca"],
-"precio":12
-},
-{"id":2,
-"nombre":"Barbacoa",   
-"ingredientes":["mozzarella"," tomate"," carne"," salsa barbacoa"],
-"precio":15
-},
-{"id":3,
-"nombre":"Cuatroquesos",
-"ingredientes":["mozzarella"," tomate"," gorgonzola"," parmesano"," provolone"],
-"precio":13
-},
-{"id":4,
-"nombre":"Hawaiana",
-"ingredientes":["mozzarella"," tomate"," piña"," jamon"],
-"precio":14
-},
-{"id":5,
-"nombre":"Pepperoni",
-"ingredientes":["mozzarella"," tomate"," pepperoni"],
-"precio":14
-},
-{"id":6,
-"nombre":"Vegetariana",
-"ingredientes":["mozzarella"," tomate"," pimiento"," cebolla"," berenjena"],
-"precio":13
-},
-{"id":7,
-"nombre":"Caprichosa",
-"ingredientes":["mozzarella"," tomate"," jamón"," champiñones"," aceitunas"],
-"precio":14
-},
-{"id":8,
-"nombre":"Cantimpalo",
-"ingredientes":["mozzarella"," tomate"," cantimpalo"],
-"precio":15
-},
-{"id":9,
-"nombre":"Cebolla",
-"ingredientes":["mozzarella"," tomate"," cebolla"],
-"precio":14
-},
-{"id":10,
-"nombre":"Pollo",
-"ingredientes":["mozzarella"," tomate"," pollo"],
-"precio":16
-},
-{"id":11,
-"nombre":"Mexicana",
-"ingredientes":["mozzarella"," tomate"," carne"," cebolla"," chile"],
-"precio":15
-},
-{"id":12,
-"nombre":"Carbonara",
-"ingredientes":["mozzarella"," tomate"," bacon"," huevo"],
-"precio":14
-},
-{"id":13,
-"nombre":"Marinera",
-"ingredientes":["mozzarella"," tomate"," camarones"," mejillones"],
-"precio":17
-}
+  {
+    "id": 1,
+    "nombre": "Margarita",
+    "ingredientes": ["mozzarella", " tomate", " albahaca"],
+    "precio": 12
+  },
+  {
+    "id": 2,
+    "nombre": "Barbacoa",
+    "ingredientes": ["mozzarella", " tomate", " carne", " salsa barbacoa"],
+    "precio": 15
+  },
+  {
+    "id": 3,
+    "nombre": "Cuatroquesos",
+    "ingredientes": [
+      "mozzarella",
+      " tomate",
+      " gorgonzola",
+      " parmesano",
+      " provolone"
+    ],
+    "precio": 13
+  },
+  {
+    "id": 4,
+    "nombre": "Hawaiana",
+    "ingredientes": ["mozzarella", " tomate", " piña", " jamon"],
+    "precio": 14
+  },
+  {
+    "id": 5,
+    "nombre": "Pepperoni",
+    "ingredientes": ["mozzarella", " tomate", " pepperoni"],
+    "precio": 14
+  },
+  {
+    "id": 6,
+    "nombre": "Vegetariana",
+    "ingredientes": [
+      "mozzarella",
+      " tomate",
+      " pimiento",
+      " cebolla",
+      " berenjena"
+    ],
+    "precio": 13
+  },
+  {
+    "id": 7,
+    "nombre": "Caprichosa",
+    "ingredientes": [
+      "mozzarella",
+      " tomate",
+      " jamón",
+      " champiñones",
+      " aceitunas"
+    ],
+    "precio": 14
+  },
+  {
+    "id": 8,
+    "nombre": "Cantimpalo",
+    "ingredientes": ["mozzarella", " tomate", " cantimpalo"],
+    "precio": 15
+  },
+  {
+    "id": 9,
+    "nombre": "Cebolla",
+    "ingredientes": ["mozzarella", " tomate", " cebolla"],
+    "precio": 14
+  },
+  {
+    "id": 10,
+    "nombre": "Pollo",
+    "ingredientes": ["mozzarella", " tomate", " pollo"],
+    "precio": 16
+  },
+  {
+    "id": 11,
+    "nombre": "Mexicana",
+    "ingredientes": ["mozzarella", " tomate", " carne", " cebolla", " chile"],
+    "precio": 15
+  },
+  {
+    "id": 12,
+    "nombre": "Carbonara",
+    "ingredientes": ["mozzarella", " tomate", " bacon", " huevo"],
+    "precio": 14
+  },
+  {
+    "id": 13,
+    "nombre": "Marinera",
+    "ingredientes": ["mozzarella", " tomate", " camarones", " mejillones"],
+    "precio": 17
+  }
 ]
