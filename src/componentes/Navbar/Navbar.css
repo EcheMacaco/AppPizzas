@@ -1,12 +1,20 @@
 .navbar {
-  width: auto;
+  width: 100vw;
   height: 70px;
+  min-width: 100px;
+  min-height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 5px;
+  margin: 0;
   background-color: #fe893c;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: inherit;
   align-items: center;
-  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .navbar .logo {
   max-width: 50px;
@@ -16,11 +24,14 @@
 }
 .navbar ul {
   align-self: center;
-  margin: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 .navbar li {
   display: grid;
   margin-left: 20px;
+
   float: right;
   overflow: hidden;
 }
@@ -35,4 +46,9 @@
 }
 .navbar a:hover {
   color: rgb(255, 255, 255);
+}
+
+body,
+.App {
+  padding-top: 80px; /* Deja espacio para el navbar fijo */
 }

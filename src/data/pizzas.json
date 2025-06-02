@@ -80,7 +80,7 @@
   {
     "id": 11,
     "nombre": "Mexicana",
-    "ingredientes": ["mozzarella", " tomate", " carne", " cebolla", " chile"],
+    "ingredientes": ["mozzarella", " tomate", " cebolla", " chile"],
     "precio": 15
   },
   {
@@ -88,11 +88,5 @@
     "nombre": "Carbonara",
     "ingredientes": ["mozzarella", " tomate", " bacon", " huevo"],
     "precio": 14
-  },
-  {
-    "id": 13,
-    "nombre": "Marinera",
-    "ingredientes": ["mozzarella", " tomate", " camarones", " mejillones"],
-    "precio": 17
   }
 ]
