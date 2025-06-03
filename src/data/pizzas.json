@@ -31,9 +31,9 @@
   },
   {
     "id": 5,
-    "nombre": "Pepperoni",
-    "ingredientes": ["mozzarella", " tomate", " pepperoni"],
-    "precio": 14
+    "nombre": "Pesto",
+    "ingredientes": ["mozzarella", " tomate", " pesto", " nueces"],
+    "precio": 15
   },
   {
     "id": 6,

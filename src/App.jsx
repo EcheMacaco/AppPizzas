@@ -30,6 +30,15 @@ function App() {
     setCarrito([...carrito, id]);
   };
 
+  const restarAlCarrito = (id) => {
+    const index = carrito.indexOf(id);
+    if (index !== -1) {
+      const nuevoCarrito = [...carrito];
+      nuevoCarrito.splice(index, 1);
+      setCarrito(nuevoCarrito);
+    }
+  };
+
   return (
     <div>
       <BrowserRouter>
@@ -43,6 +52,8 @@ function App() {
               <PizzaItem
                 pizzaItem={pizzaItem}
                 agregarAlCarrito={agregarAlCarrito}
+                restarAlCarrito={restarAlCarrito}
+                carrito={carrito}
               />
             }
           />

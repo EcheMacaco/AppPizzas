@@ -1,8 +1,7 @@
 .pizza-store {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-
+  gap: 20px;
   width: 100%;
   box-sizing: border-box;
   justify-items: left;
