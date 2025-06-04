@@ -1,10 +1,17 @@
+import "./Inicio.css";
+
 const inicio = () => {
   return (
-    <div>
+    <div className="inicio-container">
       <h1>Bienvenido a nuestra pizzería</h1>
-      <p>Disfruta de las mejores pizzas de la ciudad.</p>
-      <p>Visita nuestro menú para ver todas las opciones disponibles.</p>
-      <p>¡No olvides agregar tus favoritas al carrito!</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        euismod, nisi eu consectetur cursus, nulla erat dictum erat, nec dictum
+        enim enim nec urna. Mauris euismod, velit eu facilisis cursus, enim urna
+        dictum enim, nec dictum enim enim nec urna. Pellentesque euismod, nisi
+        eu consectetur cursus, nulla erat dictum erat, nec dictum enim enim nec
+        urna. Mauris euismod, velit eu facilisis cursus.
+      </p>
     </div>
   );
 };

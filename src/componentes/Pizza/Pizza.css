@@ -142,9 +142,6 @@ img {
 }
 .pizza-cantidad {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: none;
   color: #fff;
   font-size: 2.8rem;
