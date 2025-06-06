@@ -29,7 +29,7 @@ const Pizza = ({
           </div>
           <div className="pizza-buttons">
             <div>
-              <button onClick={() => agregarAlCarrito(pizzaItem.id)}>
+              <button onClick={() => agregarAlCarrito(pizzaItem._id)}>
                 Agregar
               </button>
               <button
@@ -40,7 +40,7 @@ const Pizza = ({
                 onClick={
                   cantidad === 0
                     ? undefined
-                    : () => restarAlCarrito(pizzaItem.id)
+                    : () => restarAlCarrito(pizzaItem._id)
                 }
                 disabled={cantidad === 0}
               >

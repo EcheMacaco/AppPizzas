@@ -32,3 +32,19 @@
 .carrito-card button:hover {
   background-color: #740606ef;
 }
+.btn-confirmar-compra {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s;
+}
+
+.btn-confirmar-compra:hover {
+  background-color: #e65100;
+}
