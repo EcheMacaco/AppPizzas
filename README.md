@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# AppPizzas 🍕
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicación web fullstack para la gestión y compra de pizzas, desarrollada con React (frontend), Node.js + Express (backend) y MongoDB (base de datos). Permite a los usuarios explorar el menú, agregar/quitar productos al carrito y simular la compra, con persistencia real en base de datos.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Características principales
 
-### `npm start`
+- **Frontend en React**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  - Visualización de pizzas desde base de datos
+  - Carrito de compras sincronizado con backend
+  - Navegación SPA con React Router
+  - Estilos personalizados y responsive
+  - Feedback visual al agregar/quitar productos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Backend en Node.js + Express**
 
-### `npm test`
+  - API RESTful para pizzas, carritos, órdenes y usuarios
+  - Conexión a MongoDB con Mongoose
+  - Endpoints para CRUD de pizzas, gestión de carritos y órdenes
+  - Estructura modular y escalable
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Base de datos MongoDB**
+  - Almacena pizzas, carritos, órdenes y usuarios
+  - Seed automático desde archivo JSON para poblar pizzas
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estructura del proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+AppPizzas/
+│
+├── backend/                # Backend Node.js/Express
+│   ├── models/             # Modelos Mongoose (Pizza, Usuario, Carrito, Orden)
+│   ├── routes/             # Rutas Express (pizzas, usuarios, carrito, ordenes)
+│   ├── seedFromJson.js     # Script para poblar MongoDB desde JSON
+│   ├── app.js              # Entrada principal del backend
+│   └── .env                # Variables de entorno (MONGO_URI)
+│
+├── src/                    # Frontend React
+│   ├── componentes/        # Componentes reutilizables (Menu, Pizza, Carrito, Navbar, etc.)
+│   ├── data/pizzas.json    # Archivo de ejemplo para poblar la base de datos
+│   └── App.jsx             # Componente principal
+│
+├── package.json            # Configuración del frontend
+└── README.md               # Este archivo
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Instalación y ejecución
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clona el repositorio
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+git clone https://github.com/EcheMacaco/AppPizzas.git
+cd AppPizzas
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Instala dependencias del frontend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```sh
+npm install
+```
 
-## Learn More
+### 3. Configura y ejecuta el backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+cd backend
+npm install
+# Configura tu .env con la URI de MongoDB
+# Ejemplo:
+# MONGO_URI=mongodb://localhost:27017/app_pizzas
+node seedFromJson.js   # Pobla la base de datos con pizzas de ejemplo
+npm run dev            # Inicia el backend en puerto 4000
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. Ejecuta el frontend
 
-### Code Splitting
+```sh
+cd ..
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+La app estará disponible en [http://localhost:3000](http://localhost:3000) y el backend en [http://localhost:4000](http://localhost:4000).
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Endpoints principales del backend
 
-### Making a Progressive Web App
+- `GET    /api/pizzas` → Lista todas las pizzas
+- `GET    /api/carrito/:usuarioId` → Obtiene el carrito de un usuario
+- `PUT    /api/carrito/:usuarioId` → Actualiza el carrito de un usuario
+- `POST   /api/ordenes` → Crea una orden de compra
+- `POST   /api/usuarios/register` → Registra un usuario (básico)
+- `POST   /api/usuarios/login` → Login de usuario (básico)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Notas técnicas y buenas prácticas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- El frontend consume la API del backend usando fetch/async.
+- El estado del carrito se sincroniza siempre con el backend.
+- El backend responde siempre con `{ items: [...] }` para el carrito.
+- El seed de pizzas se puede actualizar editando `src/data/pizzas.json` y ejecutando `node backend/seedFromJson.js`.
+- El proyecto está preparado para escalar: puedes agregar autenticación real, pagos, panel de administración, etc.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Créditos y agradecimientos
 
-### `npm run build` fails to minify
+- Desarrollado por Ezequiel Sanchez como proyecto de práctica fullstack.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
