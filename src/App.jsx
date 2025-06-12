@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PizzaItem from "./componentes/PizzaItem/PizzaItem";
 import Navbar from "./componentes/Navbar/Navbar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Carrito from "./componentes/Carrito/Carrito";
 import Inicio from "./componentes/Inicio/Inicio";
 import pedirPizza from "./componentes/pedirPizza";
@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route
@@ -66,7 +66,7 @@ function App() {
           />
           <Route path="/inicio" element={<Inicio />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
